@@ -32,7 +32,7 @@ export async function paymentProcess(req: AuthenticatedRequest, res: Response) {
       ticketId,
       cardData,
     } = req.body;
-
+console.log(ticketId, cardData)
     if (!ticketId || !cardData) {
       return res.sendStatus(httpStatus.BAD_REQUEST);
     }
